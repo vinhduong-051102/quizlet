@@ -1,28 +1,24 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import Backend from 'i18next-http-backend';
+import vi from './vi';
+import en from './en';
 
-import vi from './locales/vi/index';
-import en from './locales/en/index';
+// const Languages = ['en', 'vi'];
 
-const Languages = ['en', 'vi'];
+const resources = {
+  en: {
+    translation: en,
+  },
+  vi: {
+    translation: vi,
+  },
+};
 
-i18n
-  .use(Backend)
-  .use(initReactI18next)
-  .init({
-    resources: {
-      vi,
-      en,
-    },
-    fallbackLng: ['vi', 'en'],
-
-    interpolation: {
-      escapeValue: false,
-    },
-
-    debug: true,
-    whitelist: Languages,
-  });
+i18n.use(initReactI18next).init({
+  resources,
+  fallbackLng: 'vi',
+  debug: true,
+  interpolation: { escapeValue: false },
+});
 
 export default i18n;
