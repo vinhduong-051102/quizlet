@@ -1,7 +1,9 @@
-import login from './login.json';
+import register from './register.json';
+import common from './common.json';
 
 const ex = {
-  login,
+  register,
+  common,
 };
 
 export default ex;

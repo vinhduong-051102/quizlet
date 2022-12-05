@@ -7,8 +7,7 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import i18n from './locales/i18n';
 import { I18nextProvider } from 'react-i18next';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './features/Login';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

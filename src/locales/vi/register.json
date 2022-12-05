@@ -1,0 +1,13 @@
+{
+  "login": "Đăng nhập",
+  "submit": "Xác nhận",
+  "cancel": "Huỷ",
+  "username": "Tên người dùng",
+  "password": "Mật khẩu",
+  "rePassword": "Mật khẩu xác nhận",
+  "inputPassword": "Nhập mật khẩu",
+  "usernameIsRequired": "Tên đăng nhập là bắt buộc",
+  "passwordIsRequired": "Mật khẩu là bắt buộc",
+  "rePasswordIsRequired": "Xác nhận mật khẩu là bắt buộc",
+  "areYouHaveAccount": "Bạn có tài khoản rồi à, hãy đăng nhập"
+}
