@@ -9,5 +9,9 @@
   "usernameIsRequired": "Tên đăng nhập là bắt buộc",
   "passwordIsRequired": "Mật khẩu là bắt buộc",
   "rePasswordIsRequired": "Xác nhận mật khẩu là bắt buộc",
-  "areYouHaveAccount": "Bạn có tài khoản rồi à, hãy đăng nhập"
+  "areYouHaveAccount": "Bạn có tài khoản rồi à, hãy đăng nhập",
+  "usernameMin": "Tên đăng nhập tối thiểu là 5 kí tự",
+  "usernameMax": "Tên đăng nhập tối đa là 20 kí tự",
+  "confirmPasswordNotMatch": "Mật khẩu xác nhận không khớp",
+  "passwordMin": "Mật khẩu tối thiểu 5 kí tự"
 }

@@ -1,4 +1,6 @@
 {
   "submit": "Xác nhận",
-  "cancel": "Huỷ"
+  "cancel": "Huỷ",
+  "login": "Đăng nhập",
+  "register": "Đăng kí"
 }

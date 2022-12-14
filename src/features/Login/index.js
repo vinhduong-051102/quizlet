@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 import BackgroundLoginAndRegister from '../../components/BackgroundLoginAndRegister';
 import { useNavigate } from 'react-router-dom';
 
-const Register = () => {
+const Login = () => {
   const navigate = useNavigate();
   const [form] = Form.useForm();
   const [t] = useTranslation();
@@ -25,19 +25,11 @@ const Register = () => {
             labelCol={{ span: 24 }}
             wrapperCol={24}
             hasFeedback
-            label={t('register.username')}
+            label={t('login.username')}
             rules={[
               {
                 required: true,
-                message: t('register.usernameIsRequired'),
-              },
-              {
-                min: 5,
-                message: t('register.usernameMin'),
-              },
-              {
-                max: 20,
-                message: t('register.usernameMax'),
+                message: t('login.usernameIsRequired'),
               },
             ]}
           >
@@ -48,42 +40,12 @@ const Register = () => {
             labelCol={{ span: 24 }}
             hasFeedback
             wrapperCol={24}
-            label={t('register.password')}
+            label={t('login.password')}
             rules={[
               {
                 required: true,
-                message: t('register.passwordIsRequired'),
+                message: t('login.passwordIsRequired'),
               },
-              {
-                min: 5,
-                message: t('register.usernameMin'),
-              },
-            ]}
-          >
-            <InputPasswordStyled />
-          </FormItemStyled>
-          <FormItemStyled
-            name="rePassword"
-            labelCol={{ span: 24 }}
-            wrapperCol={24}
-            label={t('register.rePassword')}
-            dependencies={['password']}
-            hasFeedback
-            rules={[
-              {
-                required: true,
-                message: t('register.rePasswordIsRequired'),
-              },
-              ({ getFieldValue }) => ({
-                validator(_, value) {
-                  if (!value || getFieldValue('password') === value) {
-                    return Promise.resolve();
-                  }
-                  return Promise.reject(
-                    new Error(t('register.confirmPasswordNotMatch')),
-                  );
-                },
-              }),
             ]}
           >
             <InputPasswordStyled />
@@ -94,8 +56,8 @@ const Register = () => {
             </ButtonStyled>
           </FormItemStyled>
           <FormItemStyled style={{ marginTop: 40 }}>
-            <ButtonStyled onClick={() => navigate('/login')}>
-              {t('register.areYouHaveAccount')}
+            <ButtonStyled onClick={() => navigate('/register')}>
+              {t('login.areYouHaveAccount')}
             </ButtonStyled>
           </FormItemStyled>
         </FormContainer>
@@ -104,4 +66,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;

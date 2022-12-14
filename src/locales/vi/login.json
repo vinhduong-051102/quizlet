@@ -1,0 +1,12 @@
+{
+  "login": "Đăng nhập",
+  "submit": "Xác nhận",
+  "cancel": "Huỷ",
+  "username": "Tên người dùng",
+  "password": "Mật khẩu",
+  "inputPassword": "Nhập mật khẩu",
+  "usernameIsRequired": "Tên đăng nhập là bắt buộc",
+  "passwordIsRequired": "Mật khẩu là bắt buộc",
+  "areYouHaveAccount": "Nếu bạn chưa có tài khoản hãy ấn vào đây",
+  "passwordMin": "Mật khẩu tối thiểu 5 kí tự"
+}
