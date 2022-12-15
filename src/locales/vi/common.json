@@ -2,5 +2,7 @@
   "submit": "Xác nhận",
   "cancel": "Huỷ",
   "login": "Đăng nhập",
-  "register": "Đăng kí"
+  "register": "Đăng kí",
+  "logout": "Đăng xuất",
+  "create": "Tạo mới"
 }
