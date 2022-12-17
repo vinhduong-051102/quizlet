@@ -31,7 +31,7 @@ const ComponentLogged = ({ children }) => {
           border: '1px solid #282e3e',
           borderLeft: 'none',
           borderRight: 'none',
-          padding: '0 30px',
+          padding: '0 40px',
           fontSize: 30,
           fontWeight: 'bold',
           display: 'flex',

@@ -4,6 +4,7 @@ import { Row, Col, Menu } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
+
 const Background = ({ children }) => {
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -23,17 +24,16 @@ const Background = ({ children }) => {
   };
 
   React.useEffect(() => {
-    // setActiveKey();
-    const urlArr = window.location.href.split("/");
-    setActiveKey(urlArr[urlArr.length  - 1]);
-  }, [])
+    const urlArr = window.location.href.split('/');
+    setActiveKey(urlArr[urlArr.length - 1]);
+  }, []);
 
   return (
     <Row style={{ width: '100%', height: '100%' }}>
-      <Col span={12}>
+      <Col lg={12} xl={12} xxl={12} xs={0} sm={0} md={0}>
         <img src={bg} alt="" style={{ height: '100%', width: '100%' }} />
       </Col>
-      <Col span={12}>
+      <Col lg={12} xl={12} xxl={12} xs={24} sm={24} md={24}>
         <Menu
           items={items}
           mode="horizontal"
