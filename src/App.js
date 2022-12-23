@@ -1,8 +1,9 @@
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import Register from './features/Register';
 import React from 'react';
 import Login from './features/Login';
 import Home from './features/Home';
+import CreateLesson from './features/CreateLesson'
 import { Layout, Button, Popover, Menu } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
@@ -17,6 +18,7 @@ const PopoverModal = () => {
 };
 
 const ComponentLogged = ({ children }) => {
+  const navigate = useNavigate();
   const { t } = useTranslation();
   const [open, setOpen] = React.useState(false);
   const handleChangeOpen = (isOpen) => {
@@ -46,6 +48,7 @@ const ComponentLogged = ({ children }) => {
           <Button
             type="primary"
             style={{ backgroundColor: '#4255ff', fontWeight: 'bold' }}
+            onClick={() => navigate('/create')}
           >
             {t('common.create')}
           </Button>
@@ -74,6 +77,14 @@ const App = () => {
         element={
           <ComponentLogged>
             <Home />
+          </ComponentLogged>
+        }
+      />
+      <Route
+        path="/create"
+        element={
+          <ComponentLogged>
+            <CreateLesson />
           </ComponentLogged>
         }
       />

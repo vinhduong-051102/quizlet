@@ -1,0 +1,10 @@
+{
+  "createLesson": "Tạo học phần mới",
+  "inputTitle": "Nhập tiêu đề của học phần",
+  "inputDescription": "Nhập mô tả của tiêu đề",
+  "requiredTitle": "Tiêu đề không được để trống",
+  "vocabulary": "Thuật ngữ",
+  "meaning": "Định nghĩa",
+  "requiredVocabulary": "Thuật ngữ không được để trống",
+  "requiredMeaning": "Định nghĩa không được để trống"
+}
