@@ -26,6 +26,7 @@ const Title = ({ index }) => {
           shape="circle"
           icon={<DeleteOutlined />}
           size="large"
+          danger
         />
       </div>
     </TitleContainer>

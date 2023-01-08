@@ -6,5 +6,6 @@
   "vocabulary": "Thuật ngữ",
   "meaning": "Định nghĩa",
   "requiredVocabulary": "Thuật ngữ không được để trống",
-  "requiredMeaning": "Định nghĩa không được để trống"
+  "requiredMeaning": "Định nghĩa không được để trống",
+  "addNew": "Thêm mới"
 }

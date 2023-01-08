@@ -3,6 +3,7 @@ import { Container, TitleStyled, InputStyled, TextAreaStyled } from './styles';
 import { useTranslation } from 'react-i18next';
 import { Button, Form } from 'antd';
 import CreateCard from './components/CreateCard';
+import AddNewCard from './components/AddNewCard';
 
 const CreateLesson = () => {
   const { t } = useTranslation();
@@ -18,6 +19,8 @@ const CreateLesson = () => {
         </Form.Item>
         <Form.Item name="listCard">
           <CreateCard index={1}/>
+          <CreateCard index={2}/>
+          <AddNewCard/>
         </Form.Item>
       </Form>
       <Button>Xác nhận</Button>
